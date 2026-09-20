@@ -15,7 +15,7 @@
     --fond-doux: #F7F7F5;
     --rayon: 16px;
   }
-  * { box-sizing: border-box; }
+  html, body, div, section, main, nav, footer, a, p, span, button, h1, h2, h3 { box-sizing: border-box; }
   body {
     margin: 0;
     background: var(--fond-doux);
@@ -26,9 +26,9 @@
   .page { max-width: 1000px; margin: 0 auto; background: var(--fond-page); min-height: 100vh; }
   a:focus-visible, button:focus-visible { outline: 3px solid #C58F2C; outline-offset: 2px; }
 
-  /* Bannière qui défile */
-  .banniere { position: relative; overflow: hidden; }
+  .banniere { position: relative; overflow: hidden; min-height: 220px; background: #1F3B3A; }
   .piste {
+    position: relative;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -90,10 +90,7 @@
   }
   .fleche.prec { left: 8px; }
   .fleche.suiv { right: 8px; }
-  .points {
-    position: absolute; right: 8px; bottom: 6px; z-index: 4;
-    display: flex;
-  }
+  .points { position: absolute; right: 8px; bottom: 6px; z-index: 4; display: flex; }
   .point {
     width: 24px; height: 24px; padding: 0; border: 0; background: none; cursor: pointer;
     display: grid; place-items: center;
@@ -104,7 +101,6 @@
   }
   .point[aria-current="true"]::before { background: #fff; width: 11px; height: 11px; }
 
-  /* Barre des catégories */
   .barre {
     position: sticky; top: 0; z-index: 10;
     display: flex; align-items: center; gap: 8px;
@@ -112,10 +108,7 @@
     padding: 12px 16px;
     border-bottom: 1px solid #F0F0F0;
   }
-  .categories {
-    display: flex; gap: 10px; flex: 1;
-    overflow-x: auto; scrollbar-width: none;
-  }
+  .categories { display: flex; gap: 10px; flex: 1; overflow-x: auto; scrollbar-width: none; }
   .categories::-webkit-scrollbar { display: none; }
   .categories button {
     flex: none;
@@ -127,23 +120,13 @@
     border-radius: 999px;
     cursor: pointer;
   }
-  .categories button[aria-pressed="true"] {
-    background: var(--encre); color: #fff; border-color: var(--encre);
-  }
-  .panier {
-    flex: none; width: 44px; height: 44px;
-    display: grid; place-items: center;
-    color: var(--encre);
-  }
+  .categories button[aria-pressed="true"] { background: var(--encre); color: #fff; border-color: var(--encre); }
+  .panier { flex: none; width: 44px; height: 44px; display: grid; place-items: center; color: var(--encre); }
   .panier svg { width: 26px; height: 26px; }
 
-  /* Produits */
   main { padding: 8px 16px 40px; }
   main h2 { font-size: 1.3rem; font-weight: 700; margin: 18px 0 14px; }
-  .grille {
-    display: grid; gap: 22px 16px;
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .grille { display: grid; gap: 22px 16px; grid-template-columns: repeat(2, 1fr); }
   @media (min-width: 720px) { .grille { grid-template-columns: repeat(3, 1fr); } }
   .carte { display: block; color: inherit; text-decoration: none; }
   .vignette {
@@ -165,9 +148,7 @@
   .carte .prix { margin: 2px 0 0; font-weight: 700; font-size: 1.05rem; }
   .carte:hover .nom { text-decoration: underline; }
   .vide { color: var(--gris); padding: 20px 0; }
-
   footer { text-align: center; color: var(--gris); font-size: .85rem; padding: 0 16px 28px; }
-
   @media (prefers-reduced-motion: reduce) { .piste { scroll-behavior: auto; } }
 </style>
 </head>
@@ -205,4 +186,6 @@
 </div>
 
 <script>
-/*
+  
+  
+ 
