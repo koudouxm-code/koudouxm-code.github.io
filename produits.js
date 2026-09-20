@@ -6,7 +6,7 @@
 // fond : couleur affichée tant que la photo n'est pas ajoutée
 const PRODUITS = [
   { nom: "Bijoux igbo", prix: "25 000 FCFA", categorie: "Bijoux",
-    image: "images/akan1.jpg", page: "produits/bijoux-igbo.html",
+    image: "images/akan1.jpeg", page: "produits/bijoux-igbo.html",
     vedette: true, fond: "#7C2A24" },
   { nom: "Abodjé noir Or", prix: "15 000 FCFA", categorie: "Chaussures",
     image: "images/abodje-noir-or.jpg", page: "produits/abodje-noir-or.html",
