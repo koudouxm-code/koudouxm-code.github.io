@@ -1,0 +1,356 @@
+/* ================================
+   OLAF - STYLE PRINCIPAL
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================================
+   EN-TÊTE
+   ================================ */
+
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation > a,
+.menu > a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    opacity: 0.5;
+}
+
+
+/* ================================
+   MENU DÉROULANT
+   ================================ */
+
+.menu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    min-width: 170px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown a {
+    display: block;
+    padding: 13px 18px;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background: #f5f5f5;
+}
+
+.menu:hover .dropdown {
+    display: block;
+}
+
+
+/* ================================
+   ICÔNES
+   ================================ */
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.actions a {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.actions a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   GRANDE BANNIÈRE
+   ================================ */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("akan1.jpeg") center/cover no-repeat;
+
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(70px, 12vw, 150px);
+    letter-spacing: 20px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.hero p:not(.subtitle) {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0 auto 35px;
+    max-width: 650px;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 30px;
+    background: #ffffff;
+    color: #111111;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+
+/* ================================
+   TITRES DES SECTIONS
+   ================================ */
+
+.collections,
+.products {
+    padding: 100px 6%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+}
+
+
+/* ================================
+   COLLECTIONS
+   ================================ */
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.collection-card {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+}
+
+.collection-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.collection-card span {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* ================================
+   PRODUITS
+   ================================ */
+
+.products {
+    background: #f7f7f7;
+}
+
+#products-container {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777777;
+}
+
+
+/* ================================
+   PIED DE PAGE
+   ================================ */
+
+.footer {
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+    color: #cccccc;
+}
+
+
+/* ================================
+   VERSION MOBILE
+   ================================ */
+
+@media (max-width: 900px) {
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .navigation > a,
+    .menu > a {
+        font-size: 12px;
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .header {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .actions {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+        letter-spacing: 10px;
+    }
+
+    .hero p:not(.subtitle) {
+        font-size: 15px;
+    }
+
+    .collections,
+    .products {
+        padding: 70px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card {
+        min-height: 220px;
+    }
+}
