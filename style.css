@@ -354,3 +354,139 @@ a {
         min-height: 220px;
     }
 }
+/* ================================
+   PAGE CATALOGUE
+   ================================ */
+
+.catalogue {
+    padding: 90px 6%;
+    background: #ffffff;
+    min-height: 600px;
+}
+
+.catalogue-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.catalogue-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.catalogue-header h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.catalogue-header p:last-child {
+    color: #666666;
+    line-height: 1.7;
+}
+
+
+/* RECHERCHE */
+
+.catalogue-search {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    display: flex;
+}
+
+.catalogue-search input {
+    flex: 1;
+    padding: 17px 20px;
+    border: 1px solid #dddddd;
+    outline: none;
+    font-size: 15px;
+}
+
+.catalogue-search button {
+    padding: 17px 28px;
+    border: none;
+    background: #111111;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* FILTRES */
+
+.catalogue-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.catalogue-filters button {
+    padding: 12px 22px;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.catalogue-filters button:hover,
+.catalogue-filters button.active {
+    background: #111111;
+    color: #ffffff;
+}
+
+
+/* PRODUITS */
+
+.catalogue-products {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-placeholder {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f7f7f7;
+    padding: 40px;
+}
+
+.product-placeholder h2 {
+    margin-bottom: 15px;
+}
+
+.product-placeholder p {
+    color: #777777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .catalogue {
+        padding: 60px 20px;
+    }
+
+    .catalogue-header h1 {
+        font-size: 40px;
+    }
+
+    .catalogue-search {
+        flex-direction: column;
+    }
+
+    .catalogue-search button {
+        width: 100%;
+    }
+
+    .catalogue-filters button {
+        padding: 10px 15px;
+    }
+}
