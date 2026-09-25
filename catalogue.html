@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,10 @@
 
 <body>
 
-    <!-- EN-TÊTE -->
+    <!-- =========================
+         MENU
+    ========================== -->
+
     <header class="header">
 
         <div class="logo">
@@ -19,83 +23,132 @@
         </div>
 
         <nav class="navigation">
+
             <a href="index.html">Accueil</a>
 
             <div class="menu">
-                <a href="catalogue.html">Collections ▾</a>
+
+                <a href="catalogue.html">
+                    Collections ▾
+                </a>
 
                 <div class="dropdown">
-                    <a href="catalogue.html">Homme</a>
-                    <a href="catalogue.html">Femme</a>
-                    <a href="catalogue.html">Couple</a>
-                    <a href="catalogue.html">Enfant</a>
-                    <a href="catalogue.html">Cadeaux</a>
+                    <a href="#">Homme</a>
+                    <a href="#">Femme</a>
+                    <a href="#">Couple</a>
+                    <a href="#">Enfant</a>
+                    <a href="#">Cadeaux</a>
                 </div>
+
             </div>
 
             <a href="#">Nouveautés</a>
             <a href="#">À propos</a>
             <a href="#">Contact</a>
+
         </nav>
 
         <div class="actions">
+
             <a href="#" title="Rechercher">⌕</a>
             <a href="#" title="Favoris">♡</a>
             <a href="#" title="Panier">🛒</a>
             <a href="#" title="Compte">♙</a>
+
         </div>
 
     </header>
 
 
-    <!-- TITRE -->
+    <!-- =========================
+         CATALOGUE
+    ========================== -->
+
     <main>
 
-        <section class="collections">
+        <section class="catalogue">
 
-            <div class="section-title">
+            <div class="catalogue-header">
 
-                <p>OLAF SHOP</p>
+                <p class="catalogue-subtitle">
+                    OLAF COLLECTIONS
+                </p>
 
                 <h1>
-                    Notre catalogue
+                    Catalogue
                 </h1>
 
                 <p>
-                    Découvrez nos différentes collections inspirées
-                    de la culture et de la tradition africaine.
+                    Explorez notre sélection de créations inspirées
+                    de la richesse et de l'élégance africaine.
                 </p>
 
             </div>
 
 
-            <!-- CATÉGORIES -->
-            <div class="collection-grid">
+            <!-- RECHERCHE -->
 
-                <a href="#" class="collection-card">
-                    <h3>Homme</h3>
-                    <span>Découvrir la collection</span>
-                </a>
+            <div class="catalogue-search">
 
-                <a href="#" class="collection-card">
-                    <h3>Femme</h3>
-                    <span>Découvrir la collection</span>
-                </a>
+                <input
+                    type="text"
+                    placeholder="Rechercher un produit..."
+                >
 
-                <a href="#" class="collection-card">
-                    <h3>Couple</h3>
-                    <span>Découvrir la collection</span>
-                </a>
+                <button>
+                    Rechercher
+                </button>
 
-                <a href="#" class="collection-card">
-                    <h3>Enfant</h3>
-                    <span>Découvrir la collection</span>
-                </a>
+            </div>
 
-                <a href="#" class="collection-card">
-                    <h3>Cadeaux</h3>
-                    <span>Découvrir la collection</span>
-                </a>
+
+            <!-- FILTRES -->
+
+            <div class="catalogue-filters">
+
+                <button class="active">
+                    Tout
+                </button>
+
+                <button>
+                    Homme
+                </button>
+
+                <button>
+                    Femme
+                </button>
+
+                <button>
+                    Couple
+                </button>
+
+                <button>
+                    Enfant
+                </button>
+
+                <button>
+                    Cadeaux
+                </button>
+
+            </div>
+
+
+            <!-- PRODUITS -->
+
+            <div class="catalogue-products">
+
+                <div class="product-placeholder">
+
+                    <h2>
+                        Nos produits arrivent bientôt
+                    </h2>
+
+                    <p>
+                        Nous préparons une sélection de produits
+                        traditionnels et artisanaux OLAF.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -104,7 +157,10 @@
     </main>
 
 
-    <!-- PIED DE PAGE -->
+    <!-- =========================
+         PIED DE PAGE
+    ========================== -->
+
     <footer class="footer">
 
         <div class="logo">
@@ -112,7 +168,8 @@
         </div>
 
         <p>
-            Promouvoir la culture africaine à travers la mode et l'artisanat.
+            Promouvoir la culture africaine à travers
+            la mode et l'artisanat.
         </p>
 
         <p>
@@ -122,4 +179,5 @@
     </footer>
 
 </body>
+
 </html>
